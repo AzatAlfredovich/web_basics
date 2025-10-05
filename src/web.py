@@ -6,7 +6,7 @@ PORT = 8080
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
-        """Обрабатываем GET-запросы и возвращаем contacts"""
+        """Обрабатываем GET-запросы и возвращаем contacts.html"""
         try:
             with open("contacts.html", "r", encoding="utf-8") as file:
                 html_content = file.read()
